@@ -2,7 +2,7 @@
   
 <!--<h1>Admin Page</h1>-->
 
-
+<?php// var_dump($result); ?>
 <div class="container">
   
   <div class="row">
@@ -13,7 +13,7 @@
   </div><br><br>
   <div class="row">
     
-    <div class="form-panel panel panel-default ">
+    <div class="form-panel panel panel-default article-form-wrapper" >
       <div class="panel-body ">
         <form class="form-horizontal " id="article-form" onsubmit="return false;">
           <input type="hidden" name="id" >

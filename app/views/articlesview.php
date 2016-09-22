@@ -38,31 +38,33 @@ $articles2 = $articlesModel->getArticlesPaginated($params);
   <!--    <li class="<?php //  echo $this->ifPageNotExist($params['page'] + 1); ?>"><a href="<?php //  echo BASE_URL . "articles?page=" . ($params['page'] + 1).$sQuery;  ?>">Next</a></li>-->
   <!--  </ul>-->
   <!--</nav>  -->
-
-  <?php  foreach($articles as $article) { ?>
-
-  <div class="row article">
-    <div class="col-md-6 col-xs-12 pull-right">
-      <div class="panel panel-default info">
-        <div class="panel-body ">
-
-          <button class="btn category">CATEGORY</button>
-          <h1>
-            <?php echo $article["title"] ;?>
-          </h1>
-          <div class="row">
-            <div class="col-sm-9">
-              <?php echo shorten($article["content"],250) ;?>
+  <div class="innerwrapper">
+    
+    <?php  foreach($articles as $key => $article) { ?>
+  
+    <div class="row article <?php echo $active_art = ($key === 0)? "active-art" : '';?>">
+      <div class="col-md-6 col-xs-12 pull-right">
+        <div class="panel panel-default info">
+          <div class="panel-body ">
+  
+            <button class="btn category">CATEGORY</button>
+            <h1>
+              <?php echo $article["title"] ;?>
+            </h1>
+            <div class="row">
+              <div class="col-sm-9">
+                <?php echo shorten($article["content"],250) ;?>
+              </div>
             </div>
+  
           </div>
-
+          <a data-id='<?php echo $article['id'] ;?>' class="btn read-more">Read more <i class="glyphicon glyphicon-chevron-right"></i> </a>
+  
         </div>
-        <a data-id='<?php echo $article['id'] ;?>' class="btn read-more">Read more <i class="glyphicon glyphicon-chevron-right"></i> </a>
-
       </div>
     </div>
+    <?php } ?>
   </div>
-  <?php } ?>
 </div>
 
 <div class="content">

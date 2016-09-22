@@ -10,6 +10,8 @@ class LoginModel extends DB {
     $sth->execute($params);
     
     return $sth->fetch(PDO::FETCH_ASSOC);    
+    
+   
   }
   
 }

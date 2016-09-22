@@ -30,26 +30,26 @@
     <div class="author-section ">
       <p class="title">INSTAGRAM SLIDER</p>
 
-      <div class=" margint20" style="overflow: hidden; position: relative;">
-        <ul class="slides" style="width: 800%; transition-duration: 0s; transform: translate3d(-900px, 0px, 0px);">
-          <li class="" style="width: 283px; float: left; display: block;">
+      <div class="slideContainer margint20" style="overflow: hidden;">
+        <ul class="slides" style="width: 800%; ">
+          <li class="slide flex-active-slide">
             <a href="https://instagram.com/p/BJSG0Ncj4tS" target="_blank" title="">
               <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/13671244_1293401647337822_149459502_n.jpg?ig_cache_key=MTMyMDE0NzYxNjkwMjY0NjYxMA%3D%3D.2" alt="" title="" draggable="false">
             </a>
           </li>
-          <li style="width: 283px; float: left; display: block;" class="">
-            <a href="https://instagram.com/p/9n8arUoVzm" target="_blank" title="">
-              <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/11909236_1671937493077955_804964107_n.jpg?ig_cache_key=MTExMDEyMTU0OTE4NDE5NTgxNA%3D%3D.2" alt="" title="" draggable="false">
-            </a>
-          </li>
-          <li style="width: 283px; float: left; display: block;" class="">
+          <li class="slide">
             <a href="https://instagram.com/p/9n8ZfrIVzg" target="_blank" title="">
               <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/11909188_1684215351794779_786295789_n.jpg?ig_cache_key=MTExMDEyMTQ2Nzk1NzMwNDU0NA%3D%3D.2" alt="" title="" draggable="false">
             </a>
           </li>
-          <li style="width: 283px; float: left; display: block;" class="flex-active-slide">
+          <li class="slide">
             <a href="https://instagram.com/p/9n8XpDoVza" target="_blank" title="">
               <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/10296896_426520644208934_1396807173_n.jpg?ig_cache_key=MTExMDEyMTM0MDU5MzA2OTI3NA%3D%3D.2" alt="" title="" draggable="false">
+            </a>
+          </li>
+          <li class="slide">
+            <a href="https://instagram.com/p/9n8arUoVzm" target="_blank" title="">
+              <img src="https://scontent.cdninstagram.com/t51.2885-15/e35/11909236_1671937493077955_804964107_n.jpg?ig_cache_key=MTExMDEyMTU0OTE4NDE5NTgxNA%3D%3D.2" alt="" title="" draggable="false">
             </a>
           </li>
         </ul>
@@ -95,9 +95,10 @@
       </div>
 
     </div>
+    <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
   </div>
 
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
   <script rel="stylesheet" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.15.1/jquery.validate.js" /></script>
   <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.15.1/additional-methods.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/tooltip.js" integrity="sha256-ziCfLy91WAidvbK53uuAfylbZ/UvOKVn/X+Q32qBfxI=" crossorigin="anonymous"></script>

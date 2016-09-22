@@ -81,20 +81,24 @@
       <div class="col-sm-12">
         <form id="comment-form" method="POST" onsubmit="return false">
           <p>
-            <h4>WRITE A COMMENT</h4> <i>Your email address will not be published. Required fields are marked *</i> </p> <input type="hidden" name="id" value="<?php echo $article['id'] ?>">
+            <h4>WRITE A COMMENT</h4> <i>Your email address will not be published. Required fields are marked *</i> </p> 
+            <input type="hidden" name="id" value="<?php echo $article['id'] ?>">
           <div class="form-group">
             <div class="row">
-              <div class="col-sm-7"> <label for="contactName"></label> <input type="text" class="form-control" id="contactName" name="name" placeholder="NAME*" required /> </div>
+              <div class="col-sm-7"> <label for="contactName"></label> 
+              <input type="text" class="form-control" id="contactName" name="name" placeholder="NAME*" required /> </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="col-sm-7"> <label for="contactEmail"></label> <input type="email" class="form-control" id="contactEmail" name="email" placeholder="EMAIL*" required /> </div>
+              <div class="col-sm-7"> <label for="contactEmail"></label> 
+              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL*" required /> </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="col-sm-8"> <label for="contactMessage"></label> <textarea class="form-control" rows="4" cols="22" id="contactMessage" name="comment" placeholder="COMMENT" required></textarea> </div>
+              <div class="col-sm-8"> <label for="contactMessage"></label> 
+              <textarea class="form-control" rows="4" cols="22" id="comment" name="comment" placeholder="COMMENT" required></textarea> </div>
             </div>
           </div> <button type="submit" name="submit" id="submit-comment" class="btn btn-default btn-red">Submit</button> </form>
       </div>

@@ -23,9 +23,9 @@ class Login {
       
       $result = $loginmodel-> login($_POST);
       
-      var_dump($result);
+
       
-      if($_POST["email"] === $result["user_name"]){
+      if($this->validate($result)){
         
         echo "Login succesfull!";
         $_SESSION["isLogged"] = true;
@@ -44,6 +44,17 @@ class Login {
     include VIEWS."loginview.php";
     // include VIEWS."layoutview.php";
   }
+  
+   function validate($data){
+     
+     $pass = $_POST["password"];
+     
+        if ($_POST["email"] === $data["user_name"] && $data["password"] == crypt($pass,$data["password"])) {
+            return true;
+          }
+          
+        // return false;
+      }
   
   function logout(){
     unset($_SESSION['isLogged']);
